@@ -65,7 +65,7 @@ app.post("/api/v1.0/students", function (req, res) {
     return;
   }
 
-  db.collection(MEMBERS_COLLECTION).insertOne(newStudent, function (err, doc) {
+  db.collection(STUDENTS_COLLECTION).insertOne(newStudent, function (err, doc) {
     if (err) {
       handleError(res, err.message, "Failed to create new to do.");
     } else {
