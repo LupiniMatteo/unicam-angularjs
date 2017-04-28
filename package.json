@@ -1,0 +1,32 @@
+{
+  "name": "to-do-list-backend",
+  "version": "1.0.0",
+  "description": "A simple to do list backend in NodeJs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/save91/to-do-list-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/save91/to-do-list-backend/issues"
+  },
+  "homepage": "https://github.com/save91/to-do-list-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "frisby": "^0.8.5",
+    "async": "^2.3.0",
+    "morgan": "^1.8.1"
+  }
+}
