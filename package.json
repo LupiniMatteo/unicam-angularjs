@@ -1,7 +1,7 @@
 {
   "name": "to-do-list-backend",
   "version": "1.0.0",
-  "description": "A simple to do list backend in NodeJs",
+  "description": "A simple angulrar app in NodeJs",
   "main": "main.js",
   "scripts": {
     "preinstall": "bower install",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/save91/to-do-list-backend.git"
+    "url": "git+https://github.com/e-xtrategy/unicam-angularjs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/save91/to-do-list-backend/issues"
+    "url": "https://github.com/e-xtrategy/unicam-angularjs/issues"
   },
-  "homepage": "https://github.com/save91/to-do-list-backend#readme",
+  "homepage": "https://github.com/e-xtrategy/unicam-angularjs#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "cors": "^2.8.3",
