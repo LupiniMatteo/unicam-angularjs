@@ -1,7 +1,7 @@
 describe('studentList', function() {
 
   // Load the module that contains the `studentList` component before each test
-  beforeEach(module('studentApp'));
+  beforeEach(module('studentList'));
 
   // Test the controller
   describe('StudentListController', function() {
