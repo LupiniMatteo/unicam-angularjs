@@ -9,7 +9,7 @@ var STUDENTS_COLLECTION = "students";
 var app = express();
 app.use(bodyParser.json());
 
-var distDir = __dirname + "/angular/";
+var distDir = __dirname + "/app/";
 app.use(express.static(distDir));
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
@@ -35,7 +35,7 @@ mongodb.MongoClient.connect(MONGODB_URI, function (err, database) {
   });
 });
 
-// CONTACTS API ROUTES BELOW
+// STUDENTS API ROUTES BELOW
 
 // Generic error handler used by all endpoints.
 function handleError(res, reason, message, code) {
