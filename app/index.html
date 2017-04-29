@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
     <script src="student-list/student-list.module.js"></script>
     <script src="student-list/student-list.component.js"></script>
-    <script src="app.js"></script>
+    <script src="student-detail/student-detail.module.js"></script>
+    <script src="student-detail/student-detail.component.js"></script>
   </head>
-  <body ng-controller="StudentListController as studentList">
+  <body>
     <h1>Lezione Angular</h1>
-    <hr>
-    <h3>Students</h3>
-    <student-list></student-list>
+    <div ng-view></div>
   </body>
 </html>
