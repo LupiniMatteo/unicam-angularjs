@@ -14,26 +14,31 @@ describe('studentList', function () {
         .respond([
           {
             'name': 'Saverio',
+            'imgUrl': 'img/avatar.jpg',
             'surname': 'Tosi',
             'CFU': 20
           },
           {
             'name': 'Lorenzo',
+            'imgUrl': 'img/avatar.jpg',
             'surname': 'Pomili',
             'CFU': 25
           },
           {
             'name': 'Antonio',
+            'imgUrl': 'img/avatar.jpg',
             'surname': 'Dell\'ava',
             'CFU': 15
           },
           {
             'name': 'Mario',
+            'imgUrl': 'img/avatar.jpg',
             'surname': 'Rossi',
             'CFU': 7
           },
           {
             'name': 'Vittorio',
+            'imgUrl': 'img/avatar.jpg',
             'surname': 'Verdi',
             'CFU': 0
           }]);

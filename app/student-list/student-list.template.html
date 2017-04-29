@@ -13,8 +13,11 @@
   </p>
 </div>
 <div>
-  <ul>
-    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+  <ul class="students">
+    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+      <a href="#/students/{{student._id}}" class="thumb">
+        <img ng-src="{{student.imgUrl}}" alt="{{student.name}}" />
+      </a>
       <p>{{ student.name }} {{ student.surname }}</p>
       <p>CFU: {{student.CFU}} </p>
     </li>
