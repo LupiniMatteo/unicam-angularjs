@@ -7,7 +7,7 @@ studentApp.controller('StudentListController', function StudentListController() 
   studentList.students = [
     {
       'name': 'Paolo',
-      'surname': 'Rossi'
+      'surname': 'Rossa'
     },
     {
       'name': 'Caio',
@@ -16,6 +16,10 @@ studentApp.controller('StudentListController', function StudentListController() 
     {
       'name': 'Tizio',
       'surname': 'Verdi'
+    },
+    {
+      'name': 'Luca',
+      'surname': 'Bho'
     },
     {
       'name': 'Luca',
