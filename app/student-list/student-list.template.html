@@ -1,5 +1,10 @@
-<ul>
-  <li ng-repeat="student in $ctrl.students">
-    {{ student.name }} {{ student.surname }}
-  </li>
-</ul>
+<div>
+  Ricerca: <input ng-model="$ctrl.query" />
+</div>
+<div>
+  <ul>
+    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query">
+      {{ student.name }} {{ student.surname }}
+    </li>
+  </ul>
+</div>

@@ -5,24 +5,24 @@ angular.module('studentList').component('studentList', {
     var studentList = this;
     studentList.students = [
       {
-        'name': 'Paolo',
-        'surname': 'Rossa'
+        'name': 'Saverio',
+        'surname': 'Tosi'
       },
       {
-        'name': 'Caio',
-        'surname': 'Primo'
+        'name': 'Lorenzo',
+        'surname': 'Pomili'
       },
       {
-        'name': 'Tizio',
+        'name': 'Antonio',
+        'surname': 'Dell\'ava'
+      },
+      {
+        'name': 'Mario',
+        'surname': 'Rossi'
+      },
+      {
+        'name': 'Vittorio',
         'surname': 'Verdi'
-      },
-      {
-        'name': 'Luca',
-        'surname': 'Bho'
-      },
-      {
-        'name': 'Luca',
-        'surname': 'Bho'
       }];
   }
 });
