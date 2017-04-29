@@ -4,5 +4,21 @@ var studentApp = angular.module('studentApp', []);
 // Define the `PhoneListController` controller on the `studentApp` module
 studentApp.controller('StudentListController', function StudentListController() {
   var studentList = this;
-  studentList.students = ['Paolo', 'Caio'];
+  studentList.students = [
+    {
+      'name': 'Paolo',
+      'surname': 'Rossi'
+    },
+    {
+      'name': 'Caio',
+      'surname': 'Primo'
+    },
+    {
+      'name': 'Tizio',
+      'surname': 'Verdi'
+    },
+    {
+      'name': 'Luca',
+      'surname': 'Bho'
+    }];
 });
