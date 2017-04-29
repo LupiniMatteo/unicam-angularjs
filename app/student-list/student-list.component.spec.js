@@ -5,12 +5,20 @@ describe('studentList', function() {
 
   // Test the controller
   describe('StudentListController', function() {
+    var ctrl;
 
-    it('should create a `students` model with 5 students', inject(function($componentController) {
-      var ctrl = $componentController('studentList');
-
-      expect(ctrl.students.length).toBe(5);
+    beforeEach(inject(function($componentController) {
+      ctrl = $componentController('studentList');
     }));
+
+    it('should create a `students` model with 5 students', function() {
+      expect(ctrl.students.length).toBe(5);
+    });
+
+    it('should set a default value for th `orderProp` model', function() {
+      expect(ctrl.orderProp).toBe('name');
+    });
+
 
   });
 

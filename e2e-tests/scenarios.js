@@ -23,6 +23,36 @@ describe('Student Application', function() {
       query.sendKeys('a');
       expect(studentList.count()).toBe(3);
     });
+
+    it('should be possible to control student order via the drop-down menu', function() {
+      var queryField = element(by.model('$ctrl.query'));
+      var orderSelect = element(by.model('$ctrl.orderProp'));
+      var nameOption = orderSelect.element(by.css('option[value="CFU"]'));
+      var studentNameColumn = element.all(by.repeater('student in $ctrl.students').column('student.name'));
+
+      function getNames() {
+        return studentNameColumn.map(function(elem) {
+          return elem.getText();
+        });
+      }
+
+      queryField.sendKeys('a');   // Let's narrow the dataset to make the assertions shorter
+
+      expect(getNames()).toEqual([
+        'Antonio Dell\'ava',
+        'Mario Rossi',
+        'Saverio Tosi'
+      ]);
+
+      nameOption.click();
+
+      expect(getNames()).toEqual([
+        'Mario Rossi',
+        'Antonio Dell\'ava',
+        'Saverio Tosi'
+      ]);
+    });
+
   });
 
 });
