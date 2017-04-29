@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="it" ng-app>
+<html lang="it" ng-app="studentApp">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
   </head>
-  <body>
+  <body ng-controller="StudentListController as studentList">
     <h1>Lezione Angular</h1>
     <hr>
     <h3>Student</h3>
