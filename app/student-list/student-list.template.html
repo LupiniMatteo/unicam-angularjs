@@ -1,10 +1,22 @@
 <div>
-  Ricerca: <input ng-model="$ctrl.query" />
+  <p>
+    Ricerca:
+    <input ng-model="$ctrl.query" />
+  </p>
+  <p>
+    Ordina per:
+    <select ng-model="$ctrl.orderProp">
+      <option value="name">Nome</option>
+      <option value="surname">Cognome</option>
+      <option value="CFU">CFU</option>
+    </select>
+  </p>
 </div>
 <div>
   <ul>
-    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query">
-      {{ student.name }} {{ student.surname }}
+    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+      <p>{{ student.name }} {{ student.surname }}</p>
+      <p>CFU: {{student.CFU}} </p>
     </li>
   </ul>
 </div>

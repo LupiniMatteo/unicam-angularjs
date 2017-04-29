@@ -3,6 +3,7 @@ angular.module('studentList').component('studentList', {
   templateUrl: 'student-list/student-list.template.html',
   controller: function () {
     var studentList = this;
+    studentList.orderProp = 'name';
     studentList.students = [
       {
         'name': 'Saverio',
