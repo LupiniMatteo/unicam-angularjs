@@ -6,23 +6,28 @@ angular.module('studentList').component('studentList', {
     studentList.students = [
       {
         'name': 'Saverio',
-        'surname': 'Tosi'
+        'surname': 'Tosi',
+        'CFU': 20
       },
       {
         'name': 'Lorenzo',
-        'surname': 'Pomili'
+        'surname': 'Pomili',
+        'CFU': 25
       },
       {
         'name': 'Antonio',
-        'surname': 'Dell\'ava'
+        'surname': 'Dell\'ava',
+        'CFU': 15
       },
       {
         'name': 'Mario',
-        'surname': 'Rossi'
+        'surname': 'Rossi',
+        'CFU': 7
       },
       {
         'name': 'Vittorio',
-        'surname': 'Verdi'
+        'surname': 'Verdi',
+        'CFU': 0
       }];
   }
 });
