@@ -12,6 +12,7 @@ var STUDENTS = [
     'studentID': '0x0311',
     'email': 'example@example.it',
     'phone': '123456789',
+    'media': 18,
     'CFU': 20
   },
   {
@@ -21,6 +22,7 @@ var STUDENTS = [
     'studentID': '0x0311',
     'email': 'example@example.it',
     'phone': '123456789',
+    'media': 20,
     'CFU': 25
   },
   {
@@ -30,6 +32,7 @@ var STUDENTS = [
     'studentID': '0x0311',
     'email': 'example@example.it',
     'phone': '123456789',
+    'media': 22,
     'CFU': 15
   },
   {
@@ -39,6 +42,7 @@ var STUDENTS = [
     'studentID': '0x0311',
     'email': 'example@example.it',
     'phone': '123456789',
+    'media': 24,
     'CFU': 7
   },
   {
@@ -48,6 +52,7 @@ var STUDENTS = [
     'studentID': '0x0311',
     'email': 'example@example.it',
     'phone': '123456789',
+    'media': 27,
     'CFU': 0
   }];
 
