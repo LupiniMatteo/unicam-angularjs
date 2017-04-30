@@ -3,5 +3,6 @@ var studentApp = angular.module('studentApp', [
   'ngRoute',
   'studentList',
   'studentDetail',
+  'addStudent',
   'common'
 ]);

@@ -11,6 +11,9 @@ angular.
         when('/students/:studentId', {
           template: '<student-detail></student-detail>'
         }).
+        when('/add/students', {
+          template: '<add-student></add-student>'
+        }).
         otherwise('/students');
     }
   ]);
