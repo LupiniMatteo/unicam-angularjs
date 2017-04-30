@@ -5,7 +5,12 @@
 
 describe('Student Application', function () {
 
-  describe('studentList', function () {
+  it('should redirect `index.html` to `index.html#!/students', function () {
+    browser.get('index.html');
+    expect(browser.getCurrentUrl()).toBe('/students');
+  });
+
+  describe('View: Student List', function () {
     beforeEach(function () {
       browser.get('index.html');
     });
@@ -29,7 +34,7 @@ describe('Student Application', function () {
     //   query.sendKeys('saverio');
 
     //   element.all(by.css('.students li a')).first().click();
-    //   expect(browser.getLocationAbsUrl()).toBe('/students/590364b7babf803c177f111c');
+    //   expect(browser.getCurrentUrl()).toBe('/students/590364b7babf803c177f111c');
     // });
 
 
@@ -58,5 +63,18 @@ describe('Student Application', function () {
     });
 
   });
+
+  describe('View: Student details', function () {
+
+    beforeEach(function () {
+      browser.get('index.html#!/students/123456');
+    });
+
+    it('should display placeholder page with `studentId`', function () {
+      expect(element(by.binding('$ctrl.studentId')).getText()).toBe('Dettagli Studente 123456');
+    });
+
+  });
+
 
 });
