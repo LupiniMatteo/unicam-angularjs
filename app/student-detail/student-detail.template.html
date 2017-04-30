@@ -2,6 +2,7 @@
 <div ng-if="$ctrl.student">
   <p>Nome: {{ $ctrl.student.name }} {{ $ctrl.student.surname }} </p>
   <p>Matricola: {{ $ctrl.student.studentID || "Matricola non presente" }} </p>
+  <p>Media: {{ $ctrl.student.media | media }} </p>
   <p>CFU: {{ $ctrl.student.CFU }} </p>
   <p>Email: {{ $ctrl.student.email }} </p>
   <p>Telefono: {{ $ctrl.student.phone }} </p>
