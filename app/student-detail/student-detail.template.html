@@ -1,1 +1,14 @@
 <h3>Dettagli Studente {{$ctrl.studentId}}</h3>
+<div ng-if="$ctrl.student">
+  <p>Nome: {{ $ctrl.student.name }} {{ $ctrl.student.surname }} </p>
+  <p>Matricola: {{ $ctrl.student.studentID || "Matricola non presente" }} </p>
+  <p>CFU: {{ $ctrl.student.CFU }} </p>
+  <p>Email: {{ $ctrl.student.email }} </p>
+  <p>Telefono: {{ $ctrl.student.phone }} </p>
+</div>
+
+<div ng-if="!$ctrl.student">
+  <h4>Nessun studente trovato</h4>
+</div>
+<hr>
+<a href="#!/students">Torna alla lista studenti</a>

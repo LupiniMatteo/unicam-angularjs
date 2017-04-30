@@ -4,6 +4,7 @@ angular.module('studentDetail').component('studentDetail', {
   controller: function ($http, $routeParams) {
     var studentDetail = this;
     studentDetail.studentId = $routeParams.studentId;
+    studentDetail.student = null;
 
     $http.get('api/v1.0/students/' + studentDetail.studentId).then(function(response) {
       studentDetail.student = response.data;
