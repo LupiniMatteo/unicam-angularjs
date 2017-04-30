@@ -9,30 +9,45 @@ var STUDENTS = [
     'name': 'Saverio',
     'imgUrl': 'img/avatar.jpg',
     'surname': 'Tosi',
+    'studentID': '0x0311',
+    'email': 'example@example.it',
+    'phone': '123456789',
     'CFU': 20
   },
   {
     'name': 'Lorenzo',
     'imgUrl': 'img/avatar.jpg',
     'surname': 'Pomili',
+    'studentID': '0x0311',
+    'email': 'example@example.it',
+    'phone': '123456789',
     'CFU': 25
   },
   {
     'name': 'Antonio',
     'imgUrl': 'img/avatar.jpg',
     'surname': 'Dell\'ava',
+    'studentID': '0x0311',
+    'email': 'example@example.it',
+    'phone': '123456789',
     'CFU': 15
   },
   {
     'name': 'Mario',
     'imgUrl': 'img/avatar.jpg',
     'surname': 'Rossi',
+    'studentID': '0x0311',
+    'email': 'example@example.it',
+    'phone': '123456789',
     'CFU': 7
   },
   {
     'name': 'Vittorio',
     'imgUrl': 'img/avatar.jpg',
     'surname': 'Verdi',
+    'studentID': '0x0311',
+    'email': 'example@example.it',
+    'phone': '123456789',
     'CFU': 0
   }];
 
