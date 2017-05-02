@@ -4,5 +4,6 @@ var studentApp = angular.module('studentApp', [
   'studentList',
   'studentDetail',
   'addStudent',
+  'editStudent',
   'common'
 ]);
