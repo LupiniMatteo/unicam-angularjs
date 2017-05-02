@@ -7,7 +7,7 @@ describe('Student Application', function () {
 
   it('should redirect `index.html` to `index.html#!/students', function () {
     browser.get('index.html');
-    expect(browser.getCurrentUrl()).toBe('/students');
+    expect(browser.getCurrentUrl()).toBe('http://localhost:8080/index.html#!/students');
   });
 
   describe('View: Student List', function () {
@@ -26,7 +26,7 @@ describe('Student Application', function () {
 
       query.clear();
       query.sendKeys('l');
-      expect(studentList.count()).toBe(2);
+      expect(studentList.count()).toBe(5);
     });
 
     // it('should render student specific links', function () {
