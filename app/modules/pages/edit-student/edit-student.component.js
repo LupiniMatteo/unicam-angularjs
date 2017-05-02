@@ -1,12 +1,12 @@
 // Register the `editStudent` component on the `editStudent` module,
 angular.module('editStudent').component('editStudent', {
   templateUrl: 'modules/pages/edit-student/edit-student.template.html',
-  controller: function ($http, $location, $routeParams) {
+  controller: function (UserService, $location, $routeParams) {
     var editStudent = this;
     var id = $routeParams.studentId;
     var student;
 
-    $http.get('api/v1.0/students/' + id).then(function(response) {
+    UserService.getStudent(id).then(function(response) {
       editStudent.student = response.data;
       delete editStudent.student._id;
       student = angular.copy(editStudent.student);
@@ -17,7 +17,7 @@ angular.module('editStudent').component('editStudent', {
     }
 
     editStudent.update = function() {
-      $http.put('api/v1.0/students/' + id, editStudent.student).then(
+      UserService.editStudent(id, editStudent.student).then(
         function(res) {
           $location.path('');
         }, function(err) {

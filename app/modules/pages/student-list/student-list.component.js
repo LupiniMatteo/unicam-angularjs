@@ -1,18 +1,18 @@
 // Register the `studentList` component on the `studentList` module,
 angular.module('studentList').component('studentList', {
   templateUrl: 'modules/pages/student-list/student-list.template.html',
-  controller: function ($http) {
+  controller: function (UserService) {
     var studentList = this;
     studentList.orderProp = 'name';
 
-    $http.get('api/v1.0/students').then(function (response) {
+    UserService.getStudents().then(function (response) {
       studentList.students = response.data;
     });
 
     studentList.delete = function (e, id) {
       e.preventDefault();
-      $http.delete('api/v1.0/students/' + id)
-        .then($http.get('api/v1.0/students')
+      UserService.deleteStudent(id)
+        .then(UserService.getStudents()
         .then(function (response) {
           studentList.students = response.data;
         }));
