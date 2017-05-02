@@ -15,15 +15,15 @@
 </div>
 <div>
   <ul class="students">
-    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail">
+    <li ng-repeat="student in $ctrl.students | filter:$ctrl.query | orderBy:$ctrl.orderProp  track by $index" class="thumbnail">
       <a href="#!/students/{{student._id}}" class="thumb">
         <img ng-src="{{student.imgUrl}}" alt="{{student.name}}" />
       </a>
       <p>{{ student.name }} {{ student.surname }}</p>
       <p>CFU: {{student.CFU}} </p>
       <a href="#!/students/{{student._id}}">Visualizza</a> -
-      <a href="#!/edit/students/{{student._id}}">Modifica</a>
-      <!--<a href="#!/students/{{student._id}}">Elimina</a>-->
+      <a href="#!/edit/students/{{student._id}}">Modifica</a> -
+      <a href="#" ng-click="$ctrl.delete($event, student._id)">Elimina</a>
     </li>
   </ul>
 </div>

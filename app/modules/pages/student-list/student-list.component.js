@@ -5,8 +5,17 @@ angular.module('studentList').component('studentList', {
     var studentList = this;
     studentList.orderProp = 'name';
 
-    $http.get('api/v1.0/students').then(function(response) {
+    $http.get('api/v1.0/students').then(function (response) {
       studentList.students = response.data;
     });
+
+    studentList.delete = function (e, id) {
+      e.preventDefault();
+      $http.delete('api/v1.0/students/' + id)
+        .then($http.get('api/v1.0/students')
+        .then(function (response) {
+          studentList.students = response.data;
+        }));
+    }
   }
 });
