@@ -26,5 +26,6 @@
       <a href="#" ng-click="$ctrl.delete($event, student._id)">Elimina</a>
     </li>
   </ul>
+  <h4 ng-if="!($ctrl.students | filter:$ctrl.query).length">Nessun studente trovato</h4>
 </div>
 <a href="#!/add/students">Aggiungi un nuovo studente</a>
